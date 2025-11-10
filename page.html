@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Bank - Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-container">
+       
+        <div id="navbar">
+            <h4 id="ag-bank">AG BANK</h4>
+            <div class="menu-icon">☰</div>
+        </div>
+
+        
+        <div id="main-content">
+           
+            <div id="left-side">
+                <h2 id="get-started">Get started with Digital Credit Experience</h2>
+                <p id="qualify">Qualify or apply your mortgage in minutes</p>
+
+                
+                <div class="input-group">
+                    <label>Purchase price</label>
+                    <div class="amount-display">
+                        <span class="dollar">$</span>
+                        <span id="purchase-amount">250 000</span>
+                    </div>
+                    <input type="range" id="purchase-slider" min="50000" max="2500000" value="250000" step="1000">
+                    <div class="slider-labels">
+                        <span>$50 000</span>
+                        <span>$2.5 million</span>
+                    </div>
+                </div>
+
+               
+                <div class="input-group">
+                    <label>Down payment</label>
+                    <div class="amount-display">
+                        <span class="dollar">$</span>
+                        <span id="down-amount">50 000</span>
+                    </div>
+                    <input type="range" id="down-slider" min="0" max="250000" value="50000" step="1000">
+                    <div class="slider-labels">
+                        <span id="down-percent">4% or more of purchase price</span>
+                    </div>
+                </div>
+
+               
+                <div id="bottom-section">
+                    <div id="period-section">
+                        <label>Period</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="loan" value="5/1" checked>
+                                <span>5/1 ARM variable</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="loan" value="15">
+                                <span>15 year fixed</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="loan" value="30">
+                                <span>30 year fixed</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="zip-section">
+                        <label>Zip code</label>
+                        <p class="zip-value">90459</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="right-side">
+                <div id="payment-card">
+                    <p id="total-text">Your total payment will be</p>
+                    <div id="payment-amount">
+                        <span class="dollar-lg">$</span>
+                        <span id="monthly-payment">780</span>
+                    </div>
+                    <div id="details">
+                        <div class="detail-item">
+                            <span class="detail-label">Rate</span>
+                            <span class="detail-value" id="rate">5.250%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">APR</span>
+                            <span class="detail-value" id="apr">4.418%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Points</span>
+                            <span class="detail-value" id="points">0.325</span>
+                        </div>
+                    </div>
+                    <button id="get-started-btn">Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
