@@ -18,7 +18,7 @@ body {
     background: white;
     width: 100%;
     max-width: 850px;
-    height: 500px;
+    height: 550px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height:10%;
 }
 
 #ag-bank {
@@ -210,6 +211,7 @@ input[type="range"]::-moz-range-thumb {
 
 #payment-card {
     background: white;
+    position: relative;
     border-radius: 14px;
     padding: 1.75rem 1.25rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
@@ -276,12 +278,19 @@ input[type="range"]::-moz-range-thumb {
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 0.65rem 1.75rem;
+   
     font-size: 0.8rem;
     font-weight: 500;
     cursor: pointer;
-    width: 100%;
+    width: 100px;
+    height: 40px;
     transition: transform 0.2s, box-shadow 0.2s;
+    position: absolute;       
+    bottom: -20px;           
+    right: 50%;   
+    align-items:center;
+    font-size:small;
+    white-space: nowrap;
 }
 
 #get-started-btn:hover {
